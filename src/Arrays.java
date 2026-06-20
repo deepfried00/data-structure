@@ -38,10 +38,21 @@ public class Arrays{
 
                 }
         }
+        int[][] an = {
+                {1,2,3},
+                {2,3,4},
+                {4,6,6},
+        };
+        int[][] at = new int[(an[0].length)][an.length];
+        for(int i = 0; i< at[0].length; i++){
+            for(int j = 0; j < at.length;j++){
+                at[j][i] = an[i][j];
+            }
+        }
 
-        for(int i = 0; i < m3.length; i++){
-            for(int j = 0; j < m3[0].length;j++){
-                System.out.print(m3[i][j]+ " ");
+        for(int i = 0; i < at.length; i++){
+            for(int j = 0; j < at[0].length;j++){
+                System.out.print(at[i][j]+ " ");
             }
             System.out.println();
         }
